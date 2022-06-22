@@ -69,13 +69,13 @@ body {
   font-size: 26px;
   line-height: 1.2;
 }
-.logo--header {
+.logo__header {
   color: var(--black-color);
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
 }
-.logo--accent {
+.logo__accent {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -427,7 +427,7 @@ body {
   display: flex;
   align-items: baseline;
 }
-.logo--footer {
+.logo__footer {
   color: var(--white-color);
   margin-bottom: 20px;
 }
@@ -587,27 +587,27 @@ body {
   margin-left: 30px;
   margin-top: 30px;
 }
-.project__link {
+.product__link {
   display: block;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project__link:hover,
-.project__link:focus {
+.product__link:hover,
+.product__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.project__thumb {
+.thumb {
   position: relative;
   overflow: hidden;
 }
-.project__img {
+.thumb__img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-.project__overlay {
+.thumb__overlay {
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -624,8 +624,8 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project__link:hover .project__overlay,
-.project__link:focus .project__overlay {
+.product__link:hover .thumb__overlay,
+.product__link:focus .thumb__overlay {
   transform: translateY(0);
 }
 .description {
