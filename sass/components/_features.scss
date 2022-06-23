@@ -22,25 +22,15 @@
         margin-bottom: 30px;
     }
 }
-
-.icon-antenna::before {
-    content: '';
-    background-image: url(../images/antenna.svg);
-}
-
-.icon-clock::before {
-    content: '';
-    background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before {
-    content: '';
-    background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before {
-    content: '';
-    background-image: url(../images/astronaut.svg);
+@each $pictures in 
+antenna,
+clock,
+diagram,
+astronaut {
+    .#{$pictures}::before {
+        content: '';
+        background-image: url('../images/#{$pictures}.svg');
+    }
 }
 
 .features__title {
